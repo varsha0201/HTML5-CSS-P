@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Click the button to get your position</p>
+    <button onclick="getLocation()">Try It</button>
+    <div id="mapholder"></div>
+    <button onclick="clickCounter()">Counter</button>
+    <script>
+        var x=document.getElementById("demo");
+        function getLocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(success, Error);
+            }else{
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+        function success(position){
+            var latlon= position.coords.latitude+","+position.coords.longitude;
+            var img_url = "https://www.google.com/maps?client=ubuntu&channel=fs&q=vidhan+soudha&oe=utf-8&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiJr9SDtcfoAhWHwzgGHRjDCc4Q_AUoAXoECCcQAw"
+            // +latlon+"&zoom=14&size=800*600&sensor=false";
+            document.getElementById("mapholder").innerHTML="<img src='"+img_url+"'>";        
+            }
+
+            function clickCounter(){
+                if(typeof(Storage)!== "undefined"){
+                    if(localStorage.clickCounter){
+                        localStorage.clickCounter = Number(localStorage.clickCounter)+1;
+                    }
+                    else
+                    {
+                        localStorage.clickCounter =1;
+                    }
+                }
+            }
+    </script>
+</body>
+</html>

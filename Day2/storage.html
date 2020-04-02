@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local and session storage</title>
+</head>
+<body>
+    <div>
+    </div>
+    <script>
+        console.log(sessionStorage);
+        console.log(localStorage);
+        localStorage.setItem("name","john");
+
+        var n1 = localStorage.getItem("name");
+        console.log(n1);
+
+        sessionStorage.setItem('name','Kartik')
+
+    </script>
+</body>
+</html>

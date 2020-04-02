@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>User Information</h1>
+   <hr>
+   <form>
+       FirstName: <input type="text" placeholder="Enter firstName" required autofocus/><br>
+       LastName: <input type="text" placeholder="Enter lastName" required/><br>
+       Address: <input type="textarea" placeholder="Enter Address" max="250"/><br>
+       EmailId: <input type="email" placeholder="Enter EmailId" autocomplete="email"/><br>
+       DateOfBirth: <input type="date"/><br>
+       <button type="submit">Submit</button>
+   </form> 
+   <br>
+   <h1>Question 2</h1><hr>
+   <audio controls loop autoplay>
+       <source src="/audio/audio.mp3" type="audio/mp3"/>
+   </audio>
+
+   <video controls loop autoplay>
+       <source src="/video/video.mp4" type="video/mp4"/>
+   </video>
+
+   <br>
+   <hr>
+    <svg height='100' width='100'>
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red"></circle>
+    </svg>
+    <svg height='100' width='100'>
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="blue"></circle>
+    </svg>
+
+    <hr>
+
+    </script>
+        FirstName:<label id="fname"></label>
+
+
+    <script>
+        if(typeof(Storage)!=="undefined"){
+            localStorage.setItem("firstname","Test");
+            document.getElementById("fname").innerHTML = localStorage.getItem("firstname");
+        } else{
+            document.getElementById("fname").innerHTML="oops"
+        }
+        
+    </script>
+    
+
+</body>
+</html>

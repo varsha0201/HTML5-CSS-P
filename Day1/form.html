@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="process-form.html" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="age">Age</label>
+        <input type="text" id="age" name="age">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+
+        <label for="comment">Comment</label>
+        <textarea id="comment" name="comment"></textarea>
+
+        <label for="cities">City</label>
+        <select id="cities" name="cities" multiple="multiple">
+            <option value="ny">New York</option>
+            <option value="sf">San fracisco</option>
+            <option value="ger" selected="selected">Germany</option>
+            <option value="uk">UK</option>
+            <option value="us">US</option>
+        </select>
+
+        <label><input type="checkbox" name="course" value="web development"/>Web development</label>
+        <label><input type="checkbox" name="course" value="piano"/>Piano Classes</label>
+        <label><input type="checkbox" name="course" value="tennis"/>Tennis</label>
+
+
+        <label><input type="radio" name="course" value="web development"/>Web development</label>
+        <label><input type="radio" name="course" value="piano"/>Piano Classes</label>
+        <label><input type="radio" name="course" value="tennis"/>Tennis</label>
+
+
+
+        <input type="submit" value="Sign Me Up"/>
+        <input type="reset" value="Rest the values"/>
+    </form>
+</body>
+</html>

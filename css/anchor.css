@@ -1,0 +1,15 @@
+a{
+    color:grey;
+}
+a:visited{
+    color:burlywood;
+    font-size: 1.5em;
+}
+a:hover{
+    color:yellowgreen;
+    font-size: 2em;
+}
+a:active{
+    color: rebeccapurple;
+    font-size: 2em;
+}

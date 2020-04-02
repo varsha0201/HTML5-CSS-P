@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMl5 input types and attributes</title>
+</head>
+<body>
+    <!--HTML5 input type
+        number, email, url, tel, range, color, date, datetime, search
+        attributes: placeholder, requried, autocomplete="on/off", autofocus, min, max, formvalidation(on submit button)
+        file upload, multiple attribute, and enctype attribute of form (not HTMl5)
+    -->
+    <form>
+        Quantity: <input type="number" min="1" max="10"/>
+        <br/>
+        Name: <input type="text" placeholder="Enter your name" required/><br/>
+        Your email: <input type="email" placeholder="Enter Your email" autocomplete="on"/>
+        <br/>
+        Your home page: <input type="url" placeholder="Home page"/>
+        <br/>
+        Telephone number: <input type="tel" placeholder="Enter your no" autofocus/>
+        <br/>
+        Rating for course: <input type="range" min="1" max="5"/>
+        <br/>
+        Start date of journey: <input type="date"/>
+        <br/>
+        Search the site: <input type="search" placeholder="Search the site"/>
+        <br/>
+        Select the file: <input type="file" name=""/>
+        <br/>
+        <input type="submit" value="Submit the form">
+    </form>
+</body>
+</html>
