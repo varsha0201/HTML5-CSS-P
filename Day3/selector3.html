@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div span{
+            color: red;
+        }
+
+        div > span{
+            font-size: 2em;
+        }
+        div.secondary-content > p > span{
+            color: yellow;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <span>Span directly within div(child of the div)</span>
+        <p>Para 1</p>
+        <p>Para 2</p>
+        <p>Para 3
+            <span>Span 1 in para 3</span>
+            <span>Span 2 in para 3</span>
+            <span>Span 3 in para 3</span>
+        </p>
+        <p>Para 4</p>
+    </div>
+    <div class="secondary-content">
+        <span>Span directly within div(child of the div)</span>
+        <p>Para 1</p>
+        <p>Para 2</p>
+        <p>Para 3
+            <span>Span 1 in para 3</span>
+            <span>Span 2 in para 3</span>
+            <span>Span 3 in para 3</span>
+        </p>
+        <p>Para 4</p>
+    </div>
+    <div>
+        <span>Span directly within div(child of the div)</span>
+        <p>Para 1</p>
+        <p>Para 2</p>
+        <p>Para 3
+            <span>Span 1 in para 3</span>
+            <span>Span 2 in para 3</span>
+            <span>Span 3 in para 3</span>
+        </p>
+        <p>Para 4</p>
+    </div>
+</body>
+</html>

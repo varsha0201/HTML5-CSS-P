@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector in css</title>
+    <style>
+        a[target=_blank]{
+            color: brown;
+            text-decoration: none;
+        }
+        a[target]{
+            /* color: darkblue; */
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.googel.com">Googel</a>
+    <a href="http://www.facebook.com" target="_blank">Facebook</a>
+    <a href="www.medium.com">Medium</a>
+    <a href="www.twitter.com" target="_blank">Twitter</a>
+    <a href="www.edureka.com" target="iframe">Edureka</a>
+</body>
+</html>
