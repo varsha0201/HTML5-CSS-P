@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #employee{
+            padding: 20px;
+            border: 1px solid crimson;
+            border-radius: 4px;
+        }
+    </style>
+    <script>
+
+        // function log(employee){
+        //     var divemp = document.getElementById("employee");
+        //     divemp.innerHTML = divemp.innerHTML + employee + '</br>'
+        // }
+        // log('employee')
+
+        function largest(){
+            var n1, n2, n3;
+            n1 = Number(document.getElementById("F").value);
+            n2 = Number(document.getElementById("S").value);
+            n3 = Number(document.getElementById("T").value);
+
+            if(n1 > n2 && n1> n3){
+                window.alert(n1+"-is greatest no.");
+            }
+            else if(n2 > n1 && n2 > n3){
+                window.alert(n2 +"-is greatest no.");
+            }
+            else if(n3 > n1 && n3 > n2){
+                window.alert(n3 +"- is greatest no.");
+            }
+        }
+
+        var employee= {
+            "EmployeeName":"Jony",
+            "EmployeeNo":101,
+            "EmployeeAge": 252,
+            "EmployeeDepartment":"IT"
+        }
+        console.log(employee);
+
+        function move(){
+            document.getElementById('mouseover').innerHTML=alert('You have moved the mouse on the button!!');
+        }
+        
+        function myfunction(){
+        var name = prompt("Please enter your name");
+
+        if(name != null){
+            document.getElementById("name").innerHTML = "Hello " +name+ " welcome."
+        }
+        else{
+            document.getElementById("name").innerHTML = alert('Sorry, you have  not  entered  any name.');
+        }
+    }   
+
+    </script>
+</head>
+<body>
+    <div onclick="alert('C, c++, java, python');">
+        <button>click</button>
+    </div>
+    <hr>
+
+    <div id="employee"></div>
+
+    <hr>
+    <h1>Calculate largest no:</h1>
+    Enter no 1: <input type="text" id='F'/><br>
+    Enter no 2: <input type="text" id="S"/><br>
+    Enter no 3: <input type="text" id="T"/><br>
+    <button onclick="largest()">OK</button>
+    <hr>
+
+
+    <div onmousemove="move()">
+        <span id="mouseover">mouse over me!</span> </div>
+
+    <hr>
+    
+    <button onclick="myfunction()">click</button>
+    <div id="name">
+        
+    </div>
+    
+
+
+</body>
+</html>

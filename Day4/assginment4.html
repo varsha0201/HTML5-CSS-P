@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #txtshadow{
+            text-shadow: 1px 1px 5px red;
+        }
+        @font-face {
+            font-family: myFirstFont;
+            src: url(sansation_bold.woff);
+            font-weight: bold;
+        }
+
+        #img{
+            height: 10px;
+            width: 10px;
+            border-image: round ;
+        }
+
+        #rotate30{
+            transform: rotate(-30deg);
+            -webkit-transform:rotate(30deg);
+            -moz-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+            -o-transform: rotate(30deg);
+            transform: rotated(30deg);
+        }
+        #rotate60{
+            transform: rotate(-60deg);
+            -webkit-transform:rotate(60deg);
+            -moz-transform: rotate(60deg);
+            -ms-transform: rotate(60deg);
+            -o-transform: rotate(60deg);
+            transform: rotated(60deg);
+        }
+        .rotated30{
+            transform: rotate3d(1,2,1,30deg);
+        }
+        .rotated180{
+            transform: rotate3d(1,2,1,180deg);
+        }
+        .tablec{
+            border:1px solid red; 
+            color: rebeccapurple;
+            width: 40px ;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+</body>
+    <div id='txtshadow'>
+    Its me Honey
+    </div>
+    <hr>
+    <centre>
+    <h1>Happy Learning</h1>
+    </centre>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class='img'>
+        <img src="/img/1.jpeg" alt="img1" id="rotate30">
+        <img src="/img/1.jpeg" alt="img2" id="rotate60">
+        <img src="/img/1.jpeg" alt="img3" id="rotate30">
+        <img src="/img/1.jpeg" alt="img4" id="rotate30">
+        <img src="/img/1.jpeg" alt="img5" id="rotate60">
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="rotated30">
+        <img src="/img/2.jpeg"/>
+    </div>
+
+    <div class="rotated180">
+        <img src="/img/2.jpeg"/>
+    </div>
+    <hr>
+    <table class="tablec">
+        <th><td>Test1</td></th>
+        <th><td>Test1</td></th>
+        <th><td>Test1</td></th>
+        <th><td>Test1</td></th>
+    </table>
+</html>

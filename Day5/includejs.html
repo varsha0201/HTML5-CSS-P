@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Including Js</title>
+    <style>
+        div{
+            padding: 10px;
+            border: 1px solid crimson;
+            background-color: lightpink;
+            border-radius: 4px;
+        }
+        #message{
+            padding: 10px;
+            border: 1px solid crimson;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!--liline JS-->
+    <!-- <div onclick="alert('div has been clicked!!');">
+        Some content
+    </div>
+    <div id="div-2">
+        Some Contect(2)
+    </div>
+    <div id="div-3">
+        Some Content(3)
+    </div> -->
+    <!-- <script>
+        var div2 = document.getElementById('div-2');
+        div2.addEventListener('mouseover', function(){
+            alert('mouse is over div-2')
+        });
+    </script> -->
+
+    <div id='message'></div>
+    Price: $22.25<br/>
+    Quantity: <input type="text" id="quantity"/><br/>
+    Final amount: <span id="final-amount"></span><br/>
+    <button id="btnCalc">
+        Calculate Net amount
+    </button>
+    
+    <script src="/js/includejs.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <link href="bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- <link  href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" type="text/css" rel="stylesheet" /> -->
+    <style>
+       body{
+           margin-top: 50px;
+       } 
+       #map-container{
+           height: 400px;
+       }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-target="#primary-menu" data-toggle="collapse">
+                 Menu 
+                </button>
+
+            </div>
+                <div class="collapse navbar-collapse" id="primary-menu">
+                    <ul class="nav navbar-nav">
+                        <li><div class="navbar-brand">
+                            <a href="index.html">Edureka!</a>
+                        </div></li>
+                        <li><a href="our-story.html">Our Story</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="signup.html">Signup</a></li>
+                        <li><a href="faqs.html">FAQs</a></li></a>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>We are here</h2>
+        <div id="map-container">
+        </div>
+        <h1>Signup Form</h1>
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="username" class="col-sm-2 control-label">Username</label>
+                    <div class="col-sm-4">
+                        <input type="text" placeholder="Your Username" class="form-control"/>
+                    </div><br>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-4">
+                        <input type="text" placeholder="Your email" class="form-control"/>
+                    </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-4">
+                        <input type="password" placeholder="Your password" class="form-control"/>
+                    </div>
+            </div>
+            <div class="form-group">
+                <label for="how-ypu-know" class="col-sm-2 control-label">How you find us</label>
+                    <div class="col-sm-4">
+                        <select class="form-control">
+                            <option>Friends</option>
+                            <option>Google</option>
+                            <option>Facebook</option>
+                            <option>News</option>
+                        </select>
+                    </div>
+            </div>
+            <div class="form-group">
+                <label for="gender" class="col-sm-2 control-label">Gender</label>
+                    <div class="col-sm-4">
+                        <label class="radio-inline">
+                            <input type="radio" name="radio" value="Male/"> Male
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="radio" value="Female"/> Female
+                        </label>
+                    </div>
+            </div>
+            <div class="form-group">
+                <label for="gender" class="col-sm-2 control-label">Gender</label>
+                    <div class="col-sm-4">
+                        <label class="radio-inline">
+                            <input type="radio" name="radio" value="Male/"> Male
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="radio" value="Female"/> Female
+                        </label>
+                    </div>
+            </div>
+            <div class="form-group">
+                <label for="skills" class="col-sm-2 control-label">Skills</label>
+                    <div class="col-sm-10">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="option1"/> J2SE
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="option2"/> J2EE
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="option3"/> PHP
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="option4"/> Python
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="option5"/> Ruby
+                        </label>
+                        
+                    </div>
+            </div>
+            <div class="form-group">
+                <label for="message" class="col-sm-2 control-label">Short Bio</label>
+                    <div class="col-sm-4">
+                        <textarea class="form-control" rows="4" placeholder="Introduce yourself"></textarea>
+                    </div>
+            </div>
+            <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6" style="font-size: 20px;">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btb btn-success">Reset</button>
+                    </div>
+            </div>
+    
+    
+    
+        </form>
+    </div>
+
+
+
+    <footer style="margin-top:20px;">
+        <div class="text-center">
+            Copyright &copy; 2015 Brain4ce Education Solution Pvt.Ltd. All rights reversed.
+            <a data-toggle="modal" href='#modal-tnc'>Terms and Conditions</a>
+        </div>
+            <div class="modal fade" id="modal-tnc">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h2 class="modal-title">Terms and Conditions</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                2.1  Any personal information submitted in connection with your use of the Site is subject to our Privacy Policy which is available at https://www.edureka.co/privacy-policy the terms of which are hereby incorporated into these Terms by reference. Please review our Privacy Policy to understand our practices.
+                            </p>
+                            <p>2.1  Any personal information submitted in connection with your use of the Site is subject to our Privacy Policy which is available at https://www.edureka.co/privacy-policy the terms of which are hereby incorporated into these Terms by reference. Please review our Privacy Policy to understand our practices.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </footer>
+    <script src="jquery-3.5.0.min.js"></script>
+    <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js"></script>
+   
+    <script>
+        // console.log(google);
+        // console.log(google.maps);
+        window.onload = function(){
+            var location = new google.maps.LatLng(12.9129745, 77.6421572);//12.9129745,77.6421572
+
+            var map = new google.maps.Map(document.getElementById('map-container'),{
+                center: location,
+                zoom:17
+            });
+
+            var marker = new google.maps.Marker({
+                position: location,
+                "map": map,
+                title: "HSR LAYOUT"
+            });
+            map.push(marker);
+            // map.setMarker(marker);
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/Day6/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Day6/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+
+            
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+               
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Middleware</a></li>
+                            <li><a href="#">Database</a></li>
+                            <li><a href="#">Applicatopn</a></li>
+                            <li><a href="#">Server</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Collapsible Panel -Accordion</h3>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#q1">Headline 1</a>  
+                            </div>
+                        </div>
+
+                        <div class="panel-collapse collapse" id="q1">
+                            <div class="panel-body">
+                                This the description of headline 1 .
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                      <div class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#q2"> What is the longest domain name you have ever seen ?</a>
+                      </div>
+                    </div> 
+                      
+                   <div class="panel-collapse collapse" id="q2">
+                      <div class="panel-body">
+                      http://www.thelongestdomainnameintheworldandthensomeandthensomemoreandmore.com/
+                      </div>
+                   </div>    
+                      
+                  </div>
+                  
+                  <div class="panel panel-success">
+                    <div class="panel-heading">
+                      <div class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#q3"> Which place you want to visit before you die ?</a>
+                      </div>
+                    </div> 
+                      
+                   <div class="panel-collapse collapse" id="q3">
+                      <div class="panel-body">
+                      Paris
+                      </div>
+                   </div>    
+                      
+                  </div>
+                  
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <div class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#q4"> Which movie you want to watch again and again ?</a>
+                      </div>
+                    </div> 
+                      
+                   <div class="panel-collapse collapse" id="q4">
+                      <div class="panel-body">
+                      No one
+                      </div>
+                   </div>    
+                      
+                  </div>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Collapsible Group Item #1
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Collapsible Group Item #2
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Collapsible Group Item #3
+            </a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <hr>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well" style="font-size: 40px;">
+                  <a target="_blank" href="https://www.linkedin.com/company/edureka"><i class="bigIcon icon-linkedin"></i></a>
+                  <a target="_blank" href="https://twitter.com/edurekain"><i class="bigIcon icon-twitter"></i></a>
+                  <a target="_blank" href="https://www.facebook.com/edurekaIN"><i class="bigIcon icon-facebook"></i></a>
+                  <a target="_blank" href="https://www.youtube.com/user/edurekaIN"><i class="bigIcon icon-youtube"></i></a>                
+                  <a target="_blank" href="https://plus.google.com/+edurekaIN/"><i class="bigIcon icon-google-plus"></i></a>                
+                </div>
+            </div>
+         </div>
+       </div>
+
+
+
+    <script src="bootstrap/js/jquery-1.11.3.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>    
+ 
+</body> 
+</html>

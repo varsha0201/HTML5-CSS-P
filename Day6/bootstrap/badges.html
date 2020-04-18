@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/Day6/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Day6/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <style>
+        body{
+            margin: 8px;
+        }
+    </style>
+
+</head>
+<body>
+    <button class="btn btn-danger">Mail 
+    <span class="badge" id="mail-badge">12</span>
+    </button>
+
+    <script>
+        setTimeout(function(){
+            document.getElementById('mail-badge').innerHTML = 23;
+        },3000)
+    </script>
+</body>
+</html>
