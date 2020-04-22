@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .message{
+            padding: 10px 20px;
+            border-width: 1px; 
+            border-style: solid;
+            border-radius: 4px;
+            margin: 10px 0px;
+            background-color: lightpink;
+
+        }
+        .message-success{
+            border-color: green;
+            background-color: lightgreen;
+        }
+        .message-danger{
+            border-color: crimson;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="message message-success">Messge1</div>
+    <div class="message message-danger">Message2</div>
+    Name: <input type="text" id="name" name="name" value="John"/>
+    <input type="button" id="btnLogName" value="Log name's value in console"/>
+
+    <script src="/Day8/jquery-3.5.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var $message = $('.message');
+            console.log($('.message').html());
+            $('.message').html('This is a message.')
+
+            $message.css({
+                'font-weight':'bold',
+                color:'white'
+            });
+
+            $('#btnLogName').on('click', function(){
+                console.log($('[name="name"]').val());
+                $('[name="name"]').val('');
+            });
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Day8/bootstrap-3.3.7/css/bootstrap-theme.min.css"/>
+    <script src="/Day8/bootstrap-3.3.7/js/jquery-1.11.3.js"></script>
+    <script src="/Day8/bootstrap-3.3.7otstrap-3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            position: relative;
+        }
+        body{background-color: #f8e9d6;}
+        ul.nav-tabs{
+            width: 140px;
+            margin-top: 20px;
+            border-radius: 4px;
+            background: #fff;
+            z-index: 999;
+            border: 1px solid #ddd;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+        }
+        ul.nav-tabs li{
+            margin: 0;
+            border-top: 1px solid #ddd;
+
+        }
+        ul.nav-tabs li:first-child{
+            border-top: none;
+        }
+        ul.nav-tabs li a{
+            margin: 0;
+            padding: 8px 16px;
+            border-radius: 0;
+        }
+        ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+            color: #ffff;
+            background: #0088cc;
+            border: 1px solid #0088cc;
+        }
+        ul.nav-tabs li:first-child a{
+            border-radius: 4px 4px 0 0;
+        }
+        ul.nav-tabs li:last-child a{
+            border-radius: 0 0 4px 4px;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#myscrollspy">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="/img/1.jpeg" class="img-responsive center-block img-circle"/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="text-center">Don't call me shoemaker</h1><br><br>
+        <div class="row">
+            <div class="col-sm-3" id="myscrollspy">
+                <ul class="nav nav-tabs nav-stacked" data-offset-top="120" data-spy="affix">
+                    <li class="active"><a href="#section1">section1</a></li>
+                    <li><a href="#section2">section2</a></li>
+                    <li><a href="#section3">section3</a></li>
+                    <li><a href="#section4">section4</a></li>
+                    <li><a href="#section5">section5</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9">
+                <section id="section1">
+                    <h2>What is Lorem Ipsum?</h2>
+                        <p>
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis placerat venenatis. Fusce placerat sem at ornare tempor. Aenean tincidunt venenatis augue sed hendrerit. Donec ut urna leo. Mauris sed interdum tellus. Donec nibh urna, ullamcorper eget rutrum eget, ullamcorper vel tortor. Vestibulum tempus tortor vel dui consequat, nec efficitur ante gravida. Sed sagittis scelerisque tempor. Curabitur risus neque, iaculis sed laoreet vitae, fermentum a tellus. Aenean lacinia, purus eu blandit congue, est lectus tincidunt urna, a finibus lacus ipsum a arcu.
+                            
+                            Sed placerat orci in nulla congue accumsan a et ante. Praesent volutpat interdum dictum. Fusce ac nunc placerat, tempor risus quis, luctus tortor. Aenean sit amet leo suscipit, mollis velit vel, dapibus tellus. Curabitur et augue purus. Praesent a magna erat. Fusce dapibus urna at ultricies blandit. Pellentesque in blandit orci, nec luctus felis. Aliquam elementum turpis magna, quis ultricies libero feugiat in. Aenean porttitor rutrum euismod.
+                            
+                            Pellentesque augue lacus, sagittis vitae dolor at, molestie dictum tellus. Duis faucibus volutpat sapien ac sollicitudin. Proin id bibendum turpis. Donec fermentum lectus dui. Morbi auctor suscipit pellentesque. Ut at nulla sapien. In in elit neque. Suspendisse egestas faucibus tempor. Donec placerat euismod mauris nec tincidunt. Vestibulum arcu libero, blandit id aliquet ut, dapibus a eros. Ut sed tellus rutrum, tincidunt mi vitae, lobortis dolor.
+                            
+                            Nunc eu sodales nisi. Aliquam erat volutpat. Nullam ultricies sem in dignissim dapibus. Praesent non mollis enim. Suspendisse lobortis dignissim purus, sit amet rutrum turpis feugiat et. Praesent vulputate hendrerit gravida. Etiam nunc sapien, posuere blandit sagittis ut, condimentum a magna. Quisque vestibulum, lectus a gravida pellentesque, eros sem blandit nulla, vitae aliquet odio nisi ac massa. Praesent rhoncus quam vitae mattis hendrerit.
+                            
+                            Suspendisse ultrices ac mi non molestie. Vestibulum pulvinar sagittis orci, in condimentum purus tincidunt at. In pharetra gravida orci eget imperdiet. Aliquam luctus libero id dapibus suscipit. Nulla in ex mauris. Maecenas nec elementum ante. Curabitur rutrum eu quam et lobortis. Praesent quam lectus, cursus fringilla dolor ac, varius feugiat tellus. Nunc faucibus, ipsum ut tincidunt imperdiet, nisi risus volutpat mauris, id posuere metus sapien eget sapien. 
+                        </p>
+                </section>
+                <section id="section2">
+                    <h2>What is Lorem Ipsum?</h2>
+                        <p>
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis placerat venenatis. Fusce placerat sem at ornare tempor. Aenean tincidunt venenatis augue sed hendrerit. Donec ut urna leo. Mauris sed interdum tellus. Donec nibh urna, ullamcorper eget rutrum eget, ullamcorper vel tortor. Vestibulum tempus tortor vel dui consequat, nec efficitur ante gravida. Sed sagittis scelerisque tempor. Curabitur risus neque, iaculis sed laoreet vitae, fermentum a tellus. Aenean lacinia, purus eu blandit congue, est lectus tincidunt urna, a finibus lacus ipsum a arcu.
+                            
+                            Sed placerat orci in nulla congue accumsan a et ante. Praesent volutpat interdum dictum. Fusce ac nunc placerat, tempor risus quis, luctus tortor. Aenean sit amet leo suscipit, mollis velit vel, dapibus tellus. Curabitur et augue purus. Praesent a magna erat. Fusce dapibus urna at ultricies blandit. Pellentesque in blandit orci, nec luctus felis. Aliquam elementum turpis magna, quis ultricies libero feugiat in. Aenean porttitor rutrum euismod.
+                            
+                            Pellentesque augue lacus, sagittis vitae dolor at, molestie dictum tellus. Duis faucibus volutpat sapien ac sollicitudin. Proin id bibendum turpis. Donec fermentum lectus dui. Morbi auctor suscipit pellentesque. Ut at nulla sapien. In in elit neque. Suspendisse egestas faucibus tempor. Donec placerat euismod mauris nec tincidunt. Vestibulum arcu libero, blandit id aliquet ut, dapibus a eros. Ut sed tellus rutrum, tincidunt mi vitae, lobortis dolor.
+                            
+                            Nunc eu sodales nisi. Aliquam erat volutpat. Nullam ultricies sem in dignissim dapibus. Praesent non mollis enim. Suspendisse lobortis dignissim purus, sit amet rutrum turpis feugiat et. Praesent vulputate hendrerit gravida. Etiam nunc sapien, posuere blandit sagittis ut, condimentum a magna. Quisque vestibulum, lectus a gravida pellentesque, eros sem blandit nulla, vitae aliquet odio nisi ac massa. Praesent rhoncus quam vitae mattis hendrerit.
+                            
+                            Suspendisse ultrices ac mi non molestie. Vestibulum pulvinar sagittis orci, in condimentum purus tincidunt at. In pharetra gravida orci eget imperdiet. Aliquam luctus libero id dapibus suscipit. Nulla in ex mauris. Maecenas nec elementum ante. Curabitur rutrum eu quam et lobortis. Praesent quam lectus, cursus fringilla dolor ac, varius feugiat tellus. Nunc faucibus, ipsum ut tincidunt imperdiet, nisi risus volutpat mauris, id posuere metus sapien eget sapien. 
+                        </p>
+                </section>
+                <section id="section3">
+                    <h2>What is Lorem Ipsum?</h2>
+                        <p>
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis placerat venenatis. Fusce placerat sem at ornare tempor. Aenean tincidunt venenatis augue sed hendrerit. Donec ut urna leo. Mauris sed interdum tellus. Donec nibh urna, ullamcorper eget rutrum eget, ullamcorper vel tortor. Vestibulum tempus tortor vel dui consequat, nec efficitur ante gravida. Sed sagittis scelerisque tempor. Curabitur risus neque, iaculis sed laoreet vitae, fermentum a tellus. Aenean lacinia, purus eu blandit congue, est lectus tincidunt urna, a finibus lacus ipsum a arcu.
+                            
+                            Sed placerat orci in nulla congue accumsan a et ante. Praesent volutpat interdum dictum. Fusce ac nunc placerat, tempor risus quis, luctus tortor. Aenean sit amet leo suscipit, mollis velit vel, dapibus tellus. Curabitur et augue purus. Praesent a magna erat. Fusce dapibus urna at ultricies blandit. Pellentesque in blandit orci, nec luctus felis. Aliquam elementum turpis magna, quis ultricies libero feugiat in. Aenean porttitor rutrum euismod.
+                            
+                            Pellentesque augue lacus, sagittis vitae dolor at, molestie dictum tellus. Duis faucibus volutpat sapien ac sollicitudin. Proin id bibendum turpis. Donec fermentum lectus dui. Morbi auctor suscipit pellentesque. Ut at nulla sapien. In in elit neque. Suspendisse egestas faucibus tempor. Donec placerat euismod mauris nec tincidunt. Vestibulum arcu libero, blandit id aliquet ut, dapibus a eros. Ut sed tellus rutrum, tincidunt mi vitae, lobortis dolor.
+                            
+                            Nunc eu sodales nisi. Aliquam erat volutpat. Nullam ultricies sem in dignissim dapibus. Praesent non mollis enim. Suspendisse lobortis dignissim purus, sit amet rutrum turpis feugiat et. Praesent vulputate hendrerit gravida. Etiam nunc sapien, posuere blandit sagittis ut, condimentum a magna. Quisque vestibulum, lectus a gravida pellentesque, eros sem blandit nulla, vitae aliquet odio nisi ac massa. Praesent rhoncus quam vitae mattis hendrerit.
+                            
+                            Suspendisse ultrices ac mi non molestie. Vestibulum pulvinar sagittis orci, in condimentum purus tincidunt at. In pharetra gravida orci eget imperdiet. Aliquam luctus libero id dapibus suscipit. Nulla in ex mauris. Maecenas nec elementum ante. Curabitur rutrum eu quam et lobortis. Praesent quam lectus, cursus fringilla dolor ac, varius feugiat tellus. Nunc faucibus, ipsum ut tincidunt imperdiet, nisi risus volutpat mauris, id posuere metus sapien eget sapien. 
+                        </p>
+                </section>
+                <section id="section4">
+                    <h2>What is Lorem Ipsum?</h2>
+                        <p>
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis placerat venenatis. Fusce placerat sem at ornare tempor. Aenean tincidunt venenatis augue sed hendrerit. Donec ut urna leo. Mauris sed interdum tellus. Donec nibh urna, ullamcorper eget rutrum eget, ullamcorper vel tortor. Vestibulum tempus tortor vel dui consequat, nec efficitur ante gravida. Sed sagittis scelerisque tempor. Curabitur risus neque, iaculis sed laoreet vitae, fermentum a tellus. Aenean lacinia, purus eu blandit congue, est lectus tincidunt urna, a finibus lacus ipsum a arcu.
+                            
+                            Sed placerat orci in nulla congue accumsan a et ante. Praesent volutpat interdum dictum. Fusce ac nunc placerat, tempor risus quis, luctus tortor. Aenean sit amet leo suscipit, mollis velit vel, dapibus tellus. Curabitur et augue purus. Praesent a magna erat. Fusce dapibus urna at ultricies blandit. Pellentesque in blandit orci, nec luctus felis. Aliquam elementum turpis magna, quis ultricies libero feugiat in. Aenean porttitor rutrum euismod.
+                            
+                            Pellentesque augue lacus, sagittis vitae dolor at, molestie dictum tellus. Duis faucibus volutpat sapien ac sollicitudin. Proin id bibendum turpis. Donec fermentum lectus dui. Morbi auctor suscipit pellentesque. Ut at nulla sapien. In in elit neque. Suspendisse egestas faucibus tempor. Donec placerat euismod mauris nec tincidunt. Vestibulum arcu libero, blandit id aliquet ut, dapibus a eros. Ut sed tellus rutrum, tincidunt mi vitae, lobortis dolor.
+                            
+                            Nunc eu sodales nisi. Aliquam erat volutpat. Nullam ultricies sem in dignissim dapibus. Praesent non mollis enim. Suspendisse lobortis dignissim purus, sit amet rutrum turpis feugiat et. Praesent vulputate hendrerit gravida. Etiam nunc sapien, posuere blandit sagittis ut, condimentum a magna. Quisque vestibulum, lectus a gravida pellentesque, eros sem blandit nulla, vitae aliquet odio nisi ac massa. Praesent rhoncus quam vitae mattis hendrerit.
+                            
+                            Suspendisse ultrices ac mi non molestie. Vestibulum pulvinar sagittis orci, in condimentum purus tincidunt at. In pharetra gravida orci eget imperdiet. Aliquam luctus libero id dapibus suscipit. Nulla in ex mauris. Maecenas nec elementum ante. Curabitur rutrum eu quam et lobortis. Praesent quam lectus, cursus fringilla dolor ac, varius feugiat tellus. Nunc faucibus, ipsum ut tincidunt imperdiet, nisi risus volutpat mauris, id posuere metus sapien eget sapien. 
+                        </p>
+                </section>
+                <section id="section5">
+                    <h2>What is Lorem Ipsum?</h2>
+                        <p>
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis placerat venenatis. Fusce placerat sem at ornare tempor. Aenean tincidunt venenatis augue sed hendrerit. Donec ut urna leo. Mauris sed interdum tellus. Donec nibh urna, ullamcorper eget rutrum eget, ullamcorper vel tortor. Vestibulum tempus tortor vel dui consequat, nec efficitur ante gravida. Sed sagittis scelerisque tempor. Curabitur risus neque, iaculis sed laoreet vitae, fermentum a tellus. Aenean lacinia, purus eu blandit congue, est lectus tincidunt urna, a finibus lacus ipsum a arcu.
+                            
+                            Sed placerat orci in nulla congue accumsan a et ante. Praesent volutpat interdum dictum. Fusce ac nunc placerat, tempor risus quis, luctus tortor. Aenean sit amet leo suscipit, mollis velit vel, dapibus tellus. Curabitur et augue purus. Praesent a magna erat. Fusce dapibus urna at ultricies blandit. Pellentesque in blandit orci, nec luctus felis. Aliquam elementum turpis magna, quis ultricies libero feugiat in. Aenean porttitor rutrum euismod.
+                            
+                            Pellentesque augue lacus, sagittis vitae dolor at, molestie dictum tellus. Duis faucibus volutpat sapien ac sollicitudin. Proin id bibendum turpis. Donec fermentum lectus dui. Morbi auctor suscipit pellentesque. Ut at nulla sapien. In in elit neque. Suspendisse egestas faucibus tempor. Donec placerat euismod mauris nec tincidunt. Vestibulum arcu libero, blandit id aliquet ut, dapibus a eros. Ut sed tellus rutrum, tincidunt mi vitae, lobortis dolor.
+                            
+                            Nunc eu sodales nisi. Aliquam erat volutpat. Nullam ultricies sem in dignissim dapibus. Praesent non mollis enim. Suspendisse lobortis dignissim purus, sit amet rutrum turpis feugiat et. Praesent vulputate hendrerit gravida. Etiam nunc sapien, posuere blandit sagittis ut, condimentum a magna. Quisque vestibulum, lectus a gravida pellentesque, eros sem blandit nulla, vitae aliquet odio nisi ac massa. Praesent rhoncus quam vitae mattis hendrerit.
+                            
+                            Suspendisse ultrices ac mi non molestie. Vestibulum pulvinar sagittis orci, in condimentum purus tincidunt at. In pharetra gravida orci eget imperdiet. Aliquam luctus libero id dapibus suscipit. Nulla in ex mauris. Maecenas nec elementum ante. Curabitur rutrum eu quam et lobortis. Praesent quam lectus, cursus fringilla dolor ac, varius feugiat tellus. Nunc faucibus, ipsum ut tincidunt imperdiet, nisi risus volutpat mauris, id posuere metus sapien eget sapien. 
+                        </p>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

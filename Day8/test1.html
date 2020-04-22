@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("h1").dblclick(function(){
+                $(this).hide();
+            });
+        });
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css("background-color","#c6f4f0");
+
+            });
+            $("input").blur(function(){
+                $(this).css("background-color","#ced5ff");
+            });
+
+            $('#sfo').on({
+                mouseover:function(){
+                    $(this).animate({
+                        'height':500,
+                        'width':500
+                    }, 3000);
+                },
+                mouseout:function(){
+                    $(this).animate({
+                        'height':300,
+                        'width':300
+                    }, 3000);
+                }
+            });
+
+            $(function(){
+                $('#datepicker').datepicker();
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <h1 align="centre">Line 1</h1>
+    <h1 align="centre">Line 2</h1>
+    <h1 align="centre">Line 3</h1><br>
+    <form>
+        Name: <input type="text" name="name"><br>
+        Email: <input type="text" name="email">
+    </form>
+    <br>
+    <img id="sfo" height="300" width="300" src="/img/1.jpeg"/>
+    <br><br>
+    <p>Date:<input type="text" id="datepicker"></p>
+</body>
+</html>
