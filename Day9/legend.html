@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legend Page</title>
+    <link rel="stylesheet" href="/Day8/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Day8/bootstrap-3.3.7/css/bootstrap-theme.min.css">
+    <style>
+        .row{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body background="/Day9/161_m9_codes/images/background.jpg">
+    <div class="container">
+
+        <h2 class="text-centre">The Legend</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a class="btn btn-primary" data-toggle="modal" href='#modal-id' data-src="/Day9/161_m9_codes/descriptions/abraham-lincoln.html">
+                    <img src="/Day9/161_m9_codes/images/abraham_lincoln.jpg"/>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-primary" data-toggle="modal" href='#modal-id' data-src="/Day9/161_m9_codes/descriptions/muhammad-ali.html">
+                    <img src="/Day9/161_m9_codes/images/Ali-8.jpg"/>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-primary" data-toggle="modal" href='#modal-id' data-src="/Day9/161_m9_codes/descriptions/abraham-lincoln.html">
+                    <img src="/Day9/161_m9_codes/images/fidel-castro-wallpaper-300x200.jpg"/>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a class="btn btn-primary" data-toggle="modal" href='#modal-id' data-src="/Day9/161_m9_codes/descriptions/abraham-lincoln.html">
+                    <img src="/Day9/161_m9_codes/images/GANDI-copia-300x200.jpg"/>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-primary" data-toggle="modal" href='#modal-id' data-src="/Day9/161_m9_codes/descriptions/abraham-lincoln.html">
+                    <img src="/Day9/161_m9_codes/images/Mother-Teresa-300x200.jpg"/>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-primary" data-toggle="modal" href='#modal-id' data-src="/Day9/161_m9_codes/descriptions/abraham-lincoln.html">
+                    <img src="/Day9/161_m9_codes/images/Nelson-Mandela-300x200.jpg"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+ 
+    <div class="modal fade" id="modal-id">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">The Legend</h4>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">got it</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="/Day8/jquery-3.5.0.min.js"></script>
+    <script src="/Day8/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $('a').on('click', function(){
+            $.ajax({
+                method:'GET',
+                url: $(this).attr('data-src'),
+                success:function(response){
+                    $('#modal-id .modal-body').html(response);
+                },
+                error: function(){
+                    alert('Sorry, couldn\'t fetch the details');
+                }
+            });
+    });
+    </script>
+
+
+</body>
+</html>

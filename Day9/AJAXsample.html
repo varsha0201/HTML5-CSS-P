@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function loadData(){
+            var xmlhttp;
+            if(window.XMLHttpRequest){
+                xmlhttp = new XMLHttpRequest();
+            }
+            else{
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+            }
+            xmlhttp.onreadystatuschange= function(){
+                if(xmlhttp.readyState==4 && xmlhttp.status==200)
+                {
+                document.getElementById("output").innerHTML=xmlhttp.responseText;
+                } 
+            }
+        xmlhttp.open("GET","sample.txt",true);
+        xmlhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <div id="output">AJAX response will be shown here</div>
+    <button type="button" onclick="loadData()">Click to make an ajax call</button>
+</body>
+</html>
