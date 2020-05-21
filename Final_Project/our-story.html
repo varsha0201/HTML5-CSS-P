@@ -9,6 +9,11 @@
     <link href="bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap-3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
     <link  href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" type="text/css" rel="stylesheet" /> 
+    <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
+    </script>
+    <script type = "text/javascript">
+       google.charts.load('current', {packages: ['corechart']});     
+    </script>
     <style>
         body{
            margin-top: 50px;
@@ -51,10 +56,10 @@
             margin: 2px;
             color:aqua;
         } 
-        .thumbnail > img{
-            height: 150px;
-            width: 120px;
-        }
+        #img{
+           width: 100%;
+           height: 100%;
+       }
 
     </style>
 </head>
@@ -94,162 +99,65 @@
             </div>
         </div>
     </nav>
-    <div id="main-carousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="main-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="main-carousel" data-slide-to="1" class=""></li>
-            <li data-target="main-carousel" data-slide-to="2" class=""></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="item active">
-                <img alt="First slide" src="/Final_Project/img/banner.jpg">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Just Learn It</h1>
-                                <p>Wanted to learn new somethig.</p>
-                                <p><a class="btn btn-primary" href="/Final_Project/signup.html" role="button">Sign up</a></p>
-                        </div>
-                    </div>
-            </div>
-            <div class="item">
-                <img alt="First slide" src="/Final_Project/img/banner1.jpg">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Just Learn It</h1>
-                                <p>Wanted to learn new somethig.</p>
-                                <p><a class="btn btn-primary" href="/Final_Project/signup.html" role="button">Sign up</a></p>
-                        </div>
-                    </div>
-            </div>
-            <div class="item">
-                <img alt="First slide" src="/Final_Project/img/banner2.png">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Just Learn It</h1>
-                            <p>Wanted to learn new somethig.</p>
-                            <p><a class="btn btn-primary" href="/Final_Project/signup.html" role="button">Sign up</a></p>
-                        </div>
-                </div>
-            </div>
-        </div>
-        <a class="left carousel-control" href="#main-carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-        <a class="right carousel-control" href="#main-carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div>
-    
     <div class="container">
-        <h2 class="text-center" style="margin-top: 60px; margin-bottom: 100px;">Instructor-led live online courses with 24*7 on demand support</h2>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <img src="/img/liveclasses.jpeg" class="center-block"/>
-                        <h2>Live Classes</h2>
-                        <p>Learn from our Expert and get Real-Time Guidance</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="/img/flexi.jpeg" class="center-block"/>
-                        <h2>Felxible schedule</h2>
-                        <p>Learn from our Expert and get Real-Time Guidance</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="/img/24_7support.jpeg" class="center-block"/>
-                        <h2>24*7 Support</h2>
-                        <p>Learn from our Expert and get Real-Time Guidance</p>
-                </div>
-            </div>
-                <h2 class="text-center" style="margin-top: 60px; margin-bottom: 20px;">Fresh Baked Courses</h2>
-                    <div class="row">
-                <div class="col-md-2">
-                        <div class="thumbnail">
-                            <img src="/Final_Project/img/Python.jpeg" alt="">
-                                <div class="caption">
-                                    <h3>Python</h3>
-                                    <p>
-                                        Master Python
-                                    </p>
-                                    <p>
-                                        <a href="/Final_Project/comeback.html" class="btn btn-primary">Learn More</a>
-                                    </p>
-                                </div>
-                        </div>
-                    
-                </div>
-                <div class="col-md-2">
-                    <div class="thumbnail">
-                        <img src="/img/Java-Interview-Question-300x175.png" alt="">
-                            <div class="caption">
-                                <h3>Java</h3>
-                                <p>
-                                    Basic Java
-                                </p>
-                                <p>
-                                    <a href="/Final_Project/comeback.html" class="btn btn-primary">Learn More</a>
-                                </p>
-                            </div>
-                    </div>
-                
-                </div>
-                <div class="col-md-2">
-                <div class="thumbnail">
-                    <img src="/Final_Project/img/bootstrap.jpeg" alt="">
-                        <div class="caption">
-                            <h3>Bootstarp</h3>
-                            <p>
-                                Master Bootstarp
-                            </p>
-                            <p>
-                                <a href="/Final_Project/comeback.html" class="btn btn-primary">Learn More</a>
-                            </p>
-                        </div>
-                </div>
-            
-                </div>
-                <div class="col-md-2">
-            <div class="thumbnail">
-                <img src="/Final_Project/img/database.jpg" alt="">
-                    <div class="caption">
-                        <h3>Database</h3>
-                        <p>
-                            Master Database
-                        </p>
-                        <p>
-                            <a href="/Final_Project/comeback.html" class="btn btn-primary">Learn More</a>
-                        </p>
-                    </div>
-            </div>
-        
-                </div>
-                <div class="col-md-2">
-                    <div class="thumbnail">
-                        <img src="/Final_Project/img/html.png" alt="">
-                            <div class="caption">
-                                <h3>HTML</h3>
-                                <p>
-                                    Master HTML5
-                                </p>
-                                <p>
-                                    <a href="/Final_Project/comeback.html" class="btn btn-primary">Learn More</a>
-                                </p>
-                            </div>
-                    </div>
-                
-                </div>
-                <div class="col-md-2">
-                    <div class="thumbnail">
-                        <img src="/Final_Project/img/css.png" alt="">
-                            <div class="caption">
-                                <h3>CSS</h3>
-                                <p>
-                                    Master CSS3
-                                </p>
-                                <p>
-                                    <a href="/Final_Project/comeback.html" class="btn btn-primary">Learn More</a>
-                                </p>
-                            </div>
-                    </div>
 
-                </div>
-                    </div>
-
+        <h2 class="text-center" style="margin-top: 20px; margin-bottom: 20px;">We are bunch of aswesome people working together to make you awesome</h2>
+        <!-- <img src="/img/our.jpeg" id="img"/> -->
+        <div id = "container" style = "width: 550px; height: 400px; margin: 0 auto; padding-bottom: 10px;">
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <h3># Your Future</h3>
+                <p>
+                    Combine Creativity & Analytics on Each Step of Your Workflow. Empower Your Content Marketing with Data, Today!
+                </p>
+            </div>
+    
+        <div class="col-md-4">
+                <h3># Joy Of Success</h3>
+                <p>
+                    We are humans who are working hard for creating awesome courses to bring the hero within you
+                </p>
+        </div>
+        <div class="col-md-4">
+                <h3># Happiness Of Learning</h3>
+                <p>
+                    We are humans who are working hard for creating awesome courses to bring the hero within you
+                </p>
+        </div>
     </div>
+    <hr>
+    <script language = "JavaScript">
+        function drawChart() {
+           // Define the chart to be drawn.
+           var data = new google.visualization.DataTable();
+           data.addColumn('string', 'Browser');
+           data.addColumn('number', 'Percentage');
+           data.addRows([
+              ['Python', 45.0],
+              ['Java', 26.8],
+              ['Database', 12.8],
+              ['HTML5', 8.5],
+              ['Bootstrap', 6.2],
+              ['Others', 0.7]
+           ]);
+              
+           // Set chart options
+           var options = {
+              'title':'Courses taken by all our the world.',
+              'width':550,
+              'height':400,
+              pieHole: 0.4
+           };
+    
+           // Instantiate and draw the chart.
+           var chart = new google.visualization.PieChart(document.getElementById('container'));
+           chart.draw(data, options);
+        }
+        google.charts.setOnLoadCallback(drawChart);
+     </script>
+    
     <!-- Footer -->
     <footer class="page-footer font-small unique-color-dark" style="background-color:#173857">
         <div >
@@ -374,7 +282,6 @@
                     <i class="fas fa-envelope mr-3"></i> info@example.com<br>
                     <i class="fas fa-phone mr-3"></i> + 01 234 567 88<br>
                     <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-        
             </div>
             <!-- Grid column -->
         </div>
